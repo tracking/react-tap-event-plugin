@@ -95,6 +95,18 @@ injectTapEventPlugin({
 });
 ```
 
+### 设置点击移动阀值
+  
+在拖动页面滚动的过程中, 有时会遇到误点的情况, 通过设置阀值来降低该情况的出现几率, 默认值: 10
+  
+```js
+var React = require('react'),
+injectTapEventPlugin = require("react-tap-event-plugin");
+injectTapEventPlugin({
+  tapMoveThreshold: 10
+});
+```
+  
 ## Build standalone version
 
 Use the demo project and it's README instructions to build a version of React with the tap event plugin included.
