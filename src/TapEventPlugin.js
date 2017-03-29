@@ -108,10 +108,7 @@ var now = (function() {
   }
 })();
 
-function createTapEventPlugin(options) {
-  var shouldRejectClick = options.shouldRejectClick;
-  var tapMoveThreshold = options.tapMoveThreshold;
-  
+function createTapEventPlugin(shouldRejectClick, tapMoveThreshold) {
   return {
 
     tapMoveThreshold: tapMoveThreshold,
