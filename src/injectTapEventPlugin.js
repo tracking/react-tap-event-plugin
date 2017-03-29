@@ -23,9 +23,6 @@ should be injected by the application.'
   alreadyInjected = true;
 
   require('react-dom/lib/EventPluginHub').injection.injectEventPluginsByName({
-    'TapEventPlugin':       require('./TapEventPlugin.js')({
-      shouldRejectClick: shouldRejectClick,
-      tapMoveThreshold: tapMoveThreshold
-    })
+    'TapEventPlugin':       require('./TapEventPlugin.js')(shouldRejectClick, tapMoveThreshold)
   });
 };
